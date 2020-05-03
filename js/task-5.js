@@ -12,12 +12,8 @@ const getAllPropValues = function(arr, prop) {
 
   //   eslint-disable-next-line
   for (const key of arr) {
-    if (prop === 'name') {
-      result.push(key.name);
-    } else if (prop === 'price') {
-      result.push(key.price);
-    } else if (prop === 'quantity') {
-      result.push(key.quantity);
+    if (key[prop] !== undefined) {
+      result.push(key[prop]);
     }
   }
   return result;

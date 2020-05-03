@@ -2,20 +2,17 @@
 
 const findBestEmployee = function(employees) {
   const keys = Object.keys(employees);
-  let most = [0];
+  let most = 0;
+  let bestEmployees = '';
 
   // eslint-disable-next-line
   for (const key of keys) {
     if (employees[key] > most) {
       most = employees[key];
+      bestEmployees = key;
     }
   }
-  // eslint-disable-next-line
-  for (const key of keys) {
-    if (employees[key] === most) {
-      return key;
-    }
-  }
+  return bestEmployees;
 };
 
 console.log(
