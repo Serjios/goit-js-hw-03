@@ -24,7 +24,7 @@ if () { // Write code on this line
   message = `Доставка в ${country} будет стоить ${price} кредитов`;
 }
 
-console.log(message);
+// console.log(message);
 
 //если countryName равно "КитаЙ"
 // то значение message будет равно
@@ -37,3 +37,4 @@ console.log(message);
 //если countryName равно "Чили"
 // то значение message будет равно
 // 'В выбранную страну доставка недоступна.'
+
